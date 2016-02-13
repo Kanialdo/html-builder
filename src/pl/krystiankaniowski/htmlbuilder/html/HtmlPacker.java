@@ -4,11 +4,11 @@ import java.util.List;
 
 public class HtmlPacker {
 
-    public String div(String content) {
+    public static String div(String content) {
         return pack("div", content);
     }
 
-    public String ul(List<?> list) {
+    public static String ul(List<?> list) {
 
         StringBuilder builder = new StringBuilder();
 
@@ -24,19 +24,25 @@ public class HtmlPacker {
 
     }
 
-    public String h1(String content) {
+    public static String h1(String content) {
         return pack("h1", content);
     }
 
-    public String h2(String content) {
+    public static String h2(String content) {
         return pack("h2", content);
     }
 
-    public String h3(String content) {
+    public static String h3(String content) {
         return pack("h3", content);
     }
 
-    public String pack(String tag, String content) {
+    public static String p(String content) {
+        return pack("p", content);
+    }
+
+    public static String a(String url, String label) { return "<a href='" + url + "'>" + label + "</a>"; }
+
+    public static String pack(String tag, String content) {
         return "<" + tag + ">" + content + "</" + tag + ">";
     }
 
