@@ -1,3 +1,5 @@
+package pl.krystiankaniowski.htmlbuilder.table;
+
 import pl.krystiankaniowski.htmlbuilder.html.HtmlPacker;
 import org.junit.Assert;
 import org.junit.Test;
